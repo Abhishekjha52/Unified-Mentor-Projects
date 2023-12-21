@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Member-Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome, [Member Name]</h1>
+    <nav>
+      <ul>
+        <li><a href="#receipts">Receipts</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="receipts">
+      <h2>Bill Receipts</h2>
+      <div class="receipts-list">
+        <!-- Receipts will be dynamically populated here -->
+      </div>
+    </section>
+    
+    <section id="notifications">
+      <h2>Bill Notifications</h2>
+      <ul class="notifications-list">
+        <!-- Notifications will be dynamically populated here -->
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

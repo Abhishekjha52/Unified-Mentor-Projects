@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: #111;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 35%; 
+	height: 70vh;
+	color: black;
+    margin: 0 auto;
+    background-color: #673AB7;
+    border-radius: 15px;
+    padding: 20px;
+	margin-top: 10vh;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 1);
+}
+
+.title{
+	color: black;
+	font-family: cursive;
+	font-weight: 700;
+    font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    font-family: cursive;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 400px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: burlywood;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+	font-size: larger;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid black;
+	margin-bottom: 1.5rem;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: black;
+	font-size: 1.4rem;
+	width: 245px;
+	font-family: cursive;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 1.4rem;
+	font-weight: 800;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 968px) {
+    body {
+        background-color: black; /* Change background color for mobile */
+		height: 100%;
+    }
+
+	.card {
+		width: 60%; /* Adjust card width for smaller screens */
+		padding: 15px;
+		background-color: #1E88E5; /* Adjust padding for smaller screens */
+	}
+
+    .title {
+        font-size: 2.5rem; /* Adjust title font size for smaller screens */
+        margin-bottom: 1.5rem; /* Reduce margin for the title */
+		font-weight: 800;
+    }
+
+    .input {
+        width: 80%; /* Adjust input width for smaller screens */
+    }
+
+    .add {
+        width: 20%; /* Adjust button width for smaller screens */
+        font-size: 1.5rem;
+		background-color: brown; /* Adjust button font size for smaller screens */
+    }
+
+    .container {
+        margin-top: 1rem; /* Adjust margin-top for container */
+    }
+
+	.item{
+		border-bottom: 2px solid black;
+	}
+
+    .item_input {
+        width: 70%; /* Adjust input width for items on smaller screens */
+    }
+
+    .edit,
+    .remove {
+        font-size: 1.2rem; 
+		font-weight: 900;/* Adjust button font size for items on smaller screens */
+    }
+}

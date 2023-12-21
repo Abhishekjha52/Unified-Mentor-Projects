@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator{
+    padding: 15px;
+    box-shadow: 0 0 15px #000;
+    border: 2px solid rgb(116, 114, 114);
+    border-radius: 15px;
+}
+
+.display input{
+    width: 360px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: -5px -6px 15px #000;
+    outline: 1px solid #313131;
+    outline-offset: 3px;
+    cursor: pointer;
+}
+
+button:active{
+    background: #000;
+    transform: translate(2px, 2px);
+}
+
+.opr{
+    color: cyan;
+    background: #1e1919;
+    font-weight: 700;
+}
+
+.clear{
+    background: red;
+    color: #000;
+}
+
+#eqlBtn{
+    background: greenyellow;
+    color: #000;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 10px;
+    }
+    input[type="text"] {
+        width: 270px;
+        font-size: 25px;
+        padding: 5px;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    button .material-icons{
+        font-size: 16px;
+    }
+}

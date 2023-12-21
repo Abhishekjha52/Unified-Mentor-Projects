@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYM-HOME-PAGE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Images/logo.jpg" type="image/x-icon" />
+</head>
+
+<body>
+
+    <!-- NavBar Section -->
+    <header>
+        <div class="container">
+            <h1>CoreFit Gym</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="logout" >LogOut</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Main Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to Our Gym</h2>
+                    <p>Get fit, stay healthy!</p>
+                    <a href="#classes" class="btn">Explore Classes</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>
+                        Welcome to CoreFit Gym, where we're passionate about transforming
+                        lives through fitness.
+                    </p>
+                    <p>
+                        At CoreFit Gym, we believe in the incredible power of fitness to
+                        not only strengthen the body but also uplift the mind and spirit.
+                        Our mission is to be more than just a gym; we're a community
+                        dedicated to inspiring and empowering individuals on their unique
+                        fitness journeys.
+                    </p>
+                    <p>What sets us apart?</p>
+                    <ul>
+                        <li>
+                            <strong>Diverse Programs:</strong> From high-intensity interval
+                            training (HIIT) to yoga, strength training, and personalized
+                            coaching, we offer a wide range of programs tailored to
+                            individual needs and goals.
+                        </li>
+                        <li>
+                            <strong>Expert Trainers:</strong> Our team of certified trainers
+                            brings expertise, motivation, and encouragement to every
+                            session, ensuring you receive the guidance you need to succeed.
+                        </li>
+                    </ul>
+                    <p>
+                        Whether you're just starting your fitness journey or looking to
+                        elevate your workouts to the next level, CoreFit is here to
+                        support you every step of the way. Together, let's redefine what's
+                        possible and unlock your full potential.
+                    </p>
+                    <img src="./Images/main.avif" alt="About Us Image" class="img1" />
+                    <img src="./Images/bg2.avif" alt="About Us Image" class="img2" width="465.11" height="316.27" />
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Classes Section -->
+        <section id="classes" class="classes">
+            <div class="container">
+                <h2>Our Classes</h2>
+                <div class="class-cards">
+                    <div class="class-card">
+                        <img src="./Images/yoga.avif" alt="Yoga" class="class-image">
+                        <h3>Yoga</h3>
+                        <p>Join our yoga classes designed to enhance flexibility, balance, and inner strength. Guided by
+                            experienced instructors, these sessions offer a serene environment for both beginners and
+                            experienced practitioners.</p>
+                    </div>
+                    <div class="class-card">
+                        <img src="./Images/cardio.avif" alt="Cardio" class="class-image">
+                        <h3>Cardio</h3>
+                        <p>Our cardio workouts focus on boosting cardiovascular endurance and overall fitness. With
+                            energetic routines and expert guidance, these sessions are tailored to elevate heart health
+                            and stamina.</p>
+                    </div>
+                    <div class="class-card">
+                        <img src="./Images/strength.avif" alt="Strength-Training" class="class-image">
+                        <h3>Strength Training</h3>
+                        <p>Our strength training classes focus on building functional strength and muscle mass through a
+                            combination of resistance exercises, weight training, and targeted workouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Gym Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        });
+    </script>
+</body>
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+		apiKey: "AIzaSyDduHsElZ0B08Gjn79bGQDvuvNYTaWcRjQ",
+		authDomain: "gym-management-system-d15af.firebaseapp.com",
+		projectId: "gym-management-system-d15af",
+		storageBucket: "gym-management-system-d15af.appspot.com",
+		messagingSenderId: "241812856909",
+		appId: "1:241812856909:web:a6280efcd86a4fd8b4bc04",
+		measurementId: "G-H7CSF6KZYT"
+	};
+
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+	const auth = getAuth();
+
+	//----- Logout code start	  
+	document.getElementById("logout").addEventListener("click", function () {
+		signOut(auth).then(() => {
+			// Sign-out successful.
+			console.log('Sign-out successful.');
+			alert('Sign-out successful.');
+			window.location.href = "../Login/loginPage.html" 
+		}).catch((error) => {
+			// An error happened.
+			console.log('An error happened.');
+		});
+	});
+	//----- End
+
+</script>
+
+</html>

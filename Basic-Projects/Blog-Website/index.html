@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Website</title>
+    <link rel="shortcut icon" href="./Images/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- Navbar section -->
+    <div class="navbar active">
+      <img src="./Images/logo1.png" alt="logo"/>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#blog1-section">Blog1</a></li>
+        <li><a href="#blog2-section">Blog2</a></li>
+        <li><a href="#blog3-section">Blog3</a></li>
+        <li><a href="#blog4-section">Blog4</a></li>
+        <li><a href="#blog5-section">Blog5</a></li>
+        <!-- <li><input type="text" placeholder="Search.." name="search"><i class="fa fa-search"></i>
+        </li> -->
+      </ul>
+    </div>
+    <!-- Navbar section ends -->
+
+
+    <!-- Home section -->
+    <div class="top-container">
+      <h1>Welcome to my blog website</h1>
+    </div>
+    <!-- Home section ends -->
+
+
+    <!-- Blog section -->
+    <div id="blog1-section">
+      <article>
+        <img src="./Images/blog1.avif" alt="Image for Blog Post 1">
+        <div class="blog-content">
+            <header>
+              <h1><b>The Impact of Technology on Modern Society</b></h1>
+              <p><b>Published on:</b> November 1, 2023</p>
+            </header>
+            <p>
+              The impact of technology on modern society is profound and far-reaching, influencing nearly every aspect of our daily lives. From the way we communicate and access information to the transformation of industries and the global economy, technology has become an indispensable force shaping the contemporary world.</p>
+            <section class="comments">
+              <h2>Comments</h2>
+              <div id="commentList1"></div>
+              <form id="commentForm1">
+                  <input type="text" id="name1" placeholder="Your Name" required>
+                  <textarea id="message1" placeholder="Your Comment" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <div id="blog2-section">
+      <article>
+        <img src="./Images/blog2.avif" alt="Image for Blog Post 2">
+        <div class="blog-content">
+            <header>
+              <h1><b>Mastering the Art of Coding: Tips and Tricks for Aspiring Developers</b></h1>
+              <p><b>Published on:</b> January 16, 2008</p>
+            </header>
+            <p>Embrace challenges as opportunities to grow, leverage online resources like tutorials, forums, and coding communities for support and guidance. Practice consistently, build projects, and don't fear making mistakes—they're stepping stones toward mastery. Lastly, cultivate a mindset of continuous learning to stay adaptable in the ever-evolving world of technology.</p>
+            <section class="comments">
+              <h2>Comments</h2>
+              <div id="commentList2"></div>
+              <form id="commentForm2">
+                  <input type="text" id="name2" placeholder="Your Name" required>
+                  <textarea id="message2" placeholder="Your Comment" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <div id="blog3-section">
+      <article>
+        <img class="img3" src="./Images/blog3.avif" alt="Image for Blog Post 3" height="410px" width="500px">
+        <div class="blog-content">
+            <header>
+              <h1><b>Debugging Like a Pro: Strategies for Efficient Code Troubleshooting</b></h1>
+              <p><b>Published on:</b> March 10, 2013</p>
+            </header>
+            <p>Debugging code efficiently requires a systematic approach, starting with understanding the problem thoroughly and reproducing it consistently. Utilize debugging tools integrated into your IDE or use print statements strategically to trace the code's flow and identify potential issues.</p>
+            <section class="comments">
+              <h2>Comments</h2>
+              <div id="commentList3"></div>
+              <form id="commentForm3">
+                  <input type="text" id="name3" placeholder="Your Name" required>
+                  <textarea id="message3" placeholder="Your Comment" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <div id="blog4-section">
+      <article>
+        <img src="./Images/blog4.avif" alt="Image for Blog Post 4">
+        <div class="blog-content">
+            <header>
+              <h1><b>Coding Languages Demystified: Python, Java, and Beyond</b></h1>
+              <p><b>Published on:</b> August 10, 2007</p>
+            </header>
+            <p>Python's simplicity and readability make it ideal for beginners, with its extensive libraries for various tasks. Java, known for its portability, powers enterprise-level applications and Android apps. Beyond these, languages like JavaScript dominate web development, while C++ and C# find applications in game development and software engineering.</p>
+            <section class="comments">
+              <h2>Comments</h2>
+              <div id="commentList4"></div>
+              <form id="commentForm4">
+                  <input type="text" id="name4" placeholder="Your Name" required>
+                  <textarea id="message4" placeholder="Your Comment" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <div id="blog5-section">
+      <article>
+        <img class="img5" src="./Images/blog5.avif" alt="Image for Blog Post 5" height="430px" width="500px">
+        <div class="blog-content">
+            <header>
+              <h1><b>Medical Breakthroughs in Modern Science: Pioneering Innovations in Healthcare</b></h1>
+              <p><b>Published on:</b> May 23, 2010</p>
+            </header>
+            <p>In recent years, medical breakthroughs have revolutionized healthcare, from CRISPR gene editing to personalized medicine tailored to an individual's genetic makeup. Advancements in AI and machine learning have enhanced diagnostics and treatment planning, while telemedicine has expanded healthcare access globally. </p>
+            <section class="comments">
+              <h2>Comments</h2>
+              <div id="commentList5"></div>
+              <form id="commentForm5">
+                  <input type="text" id="name5" placeholder="Your Name" required>
+                  <textarea id="message5" placeholder="Your Comment" required></textarea>
+                  <button type="submit">Submit</button>
+              </form>
+          </section>
+        </div>
+      </article>
+    </div>
+    <!-- Blog section ends -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

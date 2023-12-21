@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <h1>Welcome to your Dashboard, Admin!</h1>
+      <!-- Navigation or header content -->
+  </header>
+
+  <main>
+    <div class="container">
+        <section class="add-members">
+            <h2>Add Members</h2>
+            <hr />
+            <form class="form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required/> <br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required /> <br />
+                <label for="gender">Gender:</label>
+                <input type="text" name="gender" id="gender" required /> <br />
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" required /> <br />
+            </form>
+        
+            <div class="buttons">
+                <button id="insert">Insert</button>
+                <button id="read">Read</button>
+                <button id="update">Update</button>
+                <button id="delete">Delete</button>
+            </div>
+        </section>
+
+        <section class="pay-receipts">
+            <h2>Pay Receipts</h2>
+            <!-- Display pay receipts or generate pay receipts section -->
+        </section>
+    </div>
+  </main>
+
+  <footer>
+      <!-- Footer content -->
+  </footer>
+
+  <!-- Include necessary JS, Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="./fireConfig.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
