@@ -1,0 +1,96 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, form, label {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-members, .pay-receipts {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+button#insert {
+  background-color: #28a745;
+  color: white;
+}
+
+button#read {
+  background-color: #007bff;
+  color: white;
+}
+
+button#update {
+  background-color: #ffc107;
+  color: #333;
+}
+
+button#delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
